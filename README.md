@@ -1,7 +1,7 @@
 Startup Weekend
 
-Github:
-Heroku:
+Github:https://github.com/EnriqueEsparza/startup_weekend.git
+Heroku:https://serene-woodland-3419.herokuapp.com/
 
 Description
 This app allows you to add teams and members for startup weekend
