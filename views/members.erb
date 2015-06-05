@@ -1,0 +1,27 @@
+<h3>Team <%= Team.name %> these are your members:</h3>
+<ul>
+  <% @team_members.each() do |member| %>
+  <li>Name: <%= member.name() %> <br>
+    Skill: <%= member.skill() %> <br>
+    Years of Experienc: <%= member.years() %>
+    <hr>
+  </li>
+  <% end %>
+</ul>
+
+<hr>
+
+<p>Add a member here:</p>
+
+<form action="/:id" method="post">
+  <label for="name">Members's name:</label>
+  <input id="name" name="name" type="text"><br>
+
+  <label for="skill">Skill or Language:</label>
+  <input id="skill" name="skill" type="text"><br>
+
+  <label for="years">Years of experience:</label>
+  <input id="years" name="years" type="text"><br>
+
+  <button type="submit">Add Member</button>
+</form>

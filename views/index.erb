@@ -1,0 +1,17 @@
+<h3>These are your teams:</h3>
+<h5>Select a team to add team members.</h5>
+<ul>
+  <% @teams.each() do |team| %>
+  <li><a href="/<%= team.id() %>"><%= team.name() %></a></li>
+  <% end %>
+</ul>
+
+<hr>
+
+<p>Add a team here:</p>
+
+<form action="/" method="post">
+  <label for="name">Team's name:</label>
+  <input id="name" name="name" type="text">
+  <button type="submit">Add Team</button>
+</form>
