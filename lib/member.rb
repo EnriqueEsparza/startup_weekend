@@ -22,10 +22,9 @@ class Member
     @@members = []
   end
 
-
-  # define_method(:id) do
-  #   @id
-  # end
+  define_method(:id) do
+    @id
+  end
 
 
 

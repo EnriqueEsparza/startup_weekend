@@ -39,6 +39,10 @@ class Team
     found_team
   end
 
+  define_method(:add_member) do |member|
+    @team_members.push(member)
+  end
+
 
 
 

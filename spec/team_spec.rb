@@ -60,6 +60,15 @@ describe(Team) do
     end
   end
 
+  describe("#add_member") do
+    it("add a new member to a team") do
+      test_team = Team.new("Wildcats")
+      test_member = Member.new("Jon Doe", "Ruby", 3)
+      test_team.add_member(test_member)
+      expect(test_team.team_members()).to(eq([test_member]))
+    end
+  end
+
 
 
 

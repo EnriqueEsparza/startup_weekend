@@ -1,5 +1,4 @@
 require('rspec')
-require('team')
 require ('member')
 
 describe(Member) do
@@ -51,13 +50,13 @@ describe(Member) do
   end
 
 
-  # describe("#id") do
-  #   it("returns the id of the member") do
-  #     test_member = Member.new("Jon Doe", "Ruby", 3)
-  #     test_member.save
-  #     expect(test_member.id()).to(eq(1))
-  #   end
-  # end
+  describe("#id") do
+    it("returns the id of the member") do
+      test_member = Member.new("Jon Doe", "Ruby", 3)
+      test_member.save
+      expect(test_member.id()).to(eq(1))
+    end
+  end
 
 
 
