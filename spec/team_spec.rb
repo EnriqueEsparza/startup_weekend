@@ -21,10 +21,10 @@ describe(Team) do
     end
   end
 
-  describe("#team_members") do
+  describe("#members") do
     it("initially returns an empty array of team members") do
       test_team = Team.new("Wildcats")
-      expect(test_team.team_members()).to(eq([]))
+      expect(test_team.members()).to(eq([]))
     end
   end
 
@@ -65,7 +65,7 @@ describe(Team) do
       test_team = Team.new("Wildcats")
       test_member = Member.new("Jon Doe", "Ruby", 3)
       test_team.add_member(test_member)
-      expect(test_team.team_members()).to(eq([test_member]))
+      expect(test_team.members()).to(eq([test_member]))
     end
   end
 

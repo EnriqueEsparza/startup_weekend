@@ -5,7 +5,7 @@ class Team
   define_method(:initialize) do |name|
     @name = name
     @id = @@teams.length().+(1)
-    @team_members = []
+    @members = []
 
   end
 
@@ -13,8 +13,8 @@ class Team
     @id
   end
 
-  define_method(:team_members) do
-    @team_members
+  define_method(:members) do
+    @members
   end
 
   define_method(:save) do
@@ -40,7 +40,7 @@ class Team
   end
 
   define_method(:add_member) do |member|
-    @team_members.push(member)
+    @members.push(member)
   end
 
 

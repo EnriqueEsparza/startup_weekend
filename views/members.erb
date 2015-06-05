@@ -1,9 +1,9 @@
-<h3>Team <%= Team.name %> these are your members:</h3>
+<h3>Team <%= @team_name %> these are your members:</h3>
 <ul>
   <% @team_members.each() do |member| %>
-  <li>Name: <%= member.name() %> <br>
-    Skill: <%= member.skill() %> <br>
-    Years of Experienc: <%= member.years() %>
+  <li><strong>Name: </strong><%= member.name() %><br>
+    <strong>Skill: </strong><%= member.skill() %><br>
+    <strong>Years of Experience: </strong><%= member.years() %>
     <hr>
   </li>
   <% end %>
@@ -14,14 +14,17 @@
 <p>Add a member here:</p>
 
 <form action="/:id" method="post">
+  <input id='team_id' name='team_id' type='hidden' value='<%= @team %>'>
+
   <label for="name">Members's name:</label>
-  <input id="name" name="name" type="text"><br>
+  <input id="name" name="name" type="text">
 
-  <label for="skill">Skill or Language:</label>
-  <input id="skill" name="skill" type="text"><br>
+  <label for="skill">  Skill or Language:</label>
+  <input id="skill" name="skill" type="text">
 
-  <label for="years">Years of experience:</label>
-  <input id="years" name="years" type="text"><br>
+  <label for="years">  Years of experience:</label>
+  <input id="years" name="years" type="text">
 
   <button type="submit">Add Member</button>
 </form>
+<a href='/'>Home</a>
