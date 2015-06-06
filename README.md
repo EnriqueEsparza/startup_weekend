@@ -1,7 +1,8 @@
 Startup Weekend
 
 Github:https://github.com/EnriqueEsparza/startup_weekend.git
-Heroku:https://serene-woodland-3419.herokuapp.com/
+Heroku:had trouble deploying to heroku, wasn't working correctly so I deleted repo. Upon reUpping app
+Heroku wouldn't let me upload to new repo, was still looking for previous deleted repo.
 
 Description
 This app allows you to add teams and members for startup weekend
