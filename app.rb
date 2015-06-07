@@ -13,15 +13,12 @@ post('/') do
   name = params.fetch('name')
   Team.new(name).save()
   @teams = Team.all()
-
-
-
-  erb(:index)
+erb(:index)
 end
 
 get('/:id') do
-  @team_members = Member.all()
-
+  id = params.fetch("id").to_i
+  @team = Team.find(id)
   erb(:members)
 end
 
@@ -30,10 +27,9 @@ post('/:id') do
   name = params.fetch('name')
   skill = params.fetch('skill')
   years = params.fetch('years')
-  @team_members = Member.all()
   @team_member = Member.new(name, skill, years)
   @team_member.save()
   @team = Team.find(params.fetch('team_id').to_i())
-  #@team.add_member(@team_member)
+  @team.add_member(@team_member)
   erb(:members)
 end

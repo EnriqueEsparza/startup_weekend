@@ -5,16 +5,16 @@ Heroku:had trouble deploying to heroku, wasn't working correctly so I deleted re
 Heroku wouldn't let me upload to new repo, was still looking for previous deleted repo.
 
 Description
-This app allows you to add teams and members for startup weekend
-
+This app allows you to add teams and members to each team for a Startup Weekend event.
 
 Author:
 Enrique Esparza
 
-Setup
-
-bundle install
-ruby app.rb
+Setup:
+clone Github repo
+bundle the Gemfile in Terminal/CLI. Run $ bundle
+run $ ruby app.rb
+open browser window url: localhost:4567
 License
 
 This is free and unencumbered software released into the public domain.
